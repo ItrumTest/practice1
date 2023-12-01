@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task manager</title>
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes,initial-scale=1"
+    />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+  <body>
+    <div class="task">
+      Enter some text
+    </div>
+
+    <input
+      id="input"
+      type="text"
+      placeholder="название задачи"
+    />
+    
+    <input
+      id="removeElement"
+      type="number"
+      placeholder="number задачи"
+    />
+    <button onclick="logInput()">log input</button>
+    <button onclick="resetInput()">clear input</button>
+    <button id="block" onclick="blockInput()">block input</button>
+    <button id="hide" onclick="hideInput()">hide input</button>
+    <button onclick="getRandomColorForInput()">random color</button>
+    <button onclick="addTask()">create block</button>
+    <button onclick="removeTask()">remove last block</button>
+    <button onclick="removeBlock()">remove Nth block</button>
+    <button
+      class="deleteButtonHidden"
+      id="delete"
+      onclick="deleteTask()"
+      style="background-color: tomato"
+    >
+      удалить
+    </button>
+    <div id="inputWarning" class="deletedTasksListHidden">
+      <span style="color: red">Please set some value for task</span>
+    </div>
+    <main id="main">
+      
+    </main>
+    <script src="./app/importJSfiles.js"></script>
+  </body>
+</html>
